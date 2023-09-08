@@ -21,7 +21,7 @@
     console.log(room_pk)
     console.log(request_id)
     console.log("request", '{{request}}')
-    const chatSocket = new WebSocket(`ws://${window.location.host}/ws/chat/123/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4NjEzOTE2LCJqdGkiOiI0ZDJlY2I5NjZlNTg0ZDczOThjMDA1MGViZmUxNDEyNCIsInVzZXJfaWQiOjF9.g42zUBaw8gzw56AlkrOGc3k3yk_cpfocZ_QnSkjJ0xQ`);
+    const chatSocket = new WebSocket(`wss://${window.location.host}/ws/chat/123/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkzOTIwODM2LCJpYXQiOjE2OTM0ODg4MzYsImp0aSI6Ijk0MTY4OTJjZTcwOTQ1ODliMjkxNzM3MzEwODBhNDgyIiwidXNlcl9pZCI6MX0.S_z0gWzbSQ0ulgnC4D-27_fKq0YWJKzB8J1Fd5E7tOY`);
 
 
     chatSocket.onmessage = function (e) {
