@@ -62,7 +62,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [('chatredis', 6379)],
+            "hosts": [(os.getenv("DJANGO_REDIS_HOST"), 6379)],
         },
     },
 }
